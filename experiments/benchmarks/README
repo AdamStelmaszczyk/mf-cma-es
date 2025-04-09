@@ -1,0 +1,5 @@
+Before running benchmarks with provided YAML specification, please adapt 
+`source` and `dest` keys to match location of this repository on your filesystem.
+
+Default values assume that you run experiments in a container created via provided Dockerfile.
+

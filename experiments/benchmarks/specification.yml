@@ -1,0 +1,63 @@
+methods:
+     1:
+       algorithm: "nm_cma_es_vectorized"
+       params:
+        - "stopfitness"
+        - "sigma_updater"
+        - "diag.bestVal"
+        - "diag.value"
+        - "do_flatland_escape"
+       values:
+        - 1e-12
+        - "ppmf"
+        - true
+        - true
+        - false
+     2:
+       algorithm: "vanilla_cma_es"
+       params:
+        - "stopfitness"
+        - "sigma_updater"
+        - "diag.bestVal"
+        - "diag.value"
+        - "do_flatland_escape"
+        - "do_hsig"
+       values:
+        - 1e-12
+        - "csa"
+        - true
+        - true
+        - false
+        - true
+     3:
+       algorithm: "vanilla_cma_es"
+       params:
+        - "stopfitness"
+        - "sigma_updater"
+        - "diag.bestVal"
+        - "diag.value"
+        - "do_flatland_escape"
+        - "do_hsig"
+       values:
+        - 1e-12
+        - "ppmf"
+        - true
+        - true
+        - false
+        - true
+
+ids:
+  - "nm-cma-es-ppmf-w-linear"
+  - "vanilla-cma-es-ppmf-hsig"
+  - "vanilla-cma-es-ppmf-hsig"
+probnum: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30]
+dims:
+  - 10
+  - 30
+  - 50
+cec: 17
+repnum: 51
+suite: ""
+cpupc: 0.75
+source: "/usr/src/app/src/solvers"
+dest: "/usr/src/app/experiments/benchmarks/data"
