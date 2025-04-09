@@ -1,3 +1,8 @@
+# _Covariance Matrix Adaptation Evolution Strategy without a matrix_
+
+Jarosław Arabas, Adam Stelmaszczyk, Eryk Warchulski, Dariusz Jagodziński, Rafał Biedrzycki  
+Institute of Computer Science, Warsaw University of Technology
+
 ## Installation
 
 Install podman (https://podman.io/docs/installation), on *nix:
